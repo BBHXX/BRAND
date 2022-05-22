@@ -710,12 +710,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه المسح *',
-unLock   = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه الكتم *',
-lockKid  = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه التقييد *',
-lockKick = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه الطرد *',
-Reply    = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/Cadilaac)\n*— — — — — — — — —\n⟐︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه المسح *',
+unLock   = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه الكتم *',
+lockKid  = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه التقييد *',
+lockKick = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⟐︙خاصيه الطرد *',
+Reply    = '[𝖲𝗈𝗎𝗋𝖼𝖾 BRAND](https://t.me/CXRCX)\n*— — — — — — — — —\n⟐︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -1569,7 +1569,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/CXRCX'},
 },
 }
 }
@@ -1766,7 +1766,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/CXRCX'},
 },
 }
 }
@@ -2040,7 +2040,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ⁦', url='https://t.me/CXRCX'},
 },
 }
 }
@@ -2317,7 +2317,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⟐︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 os.execute('rm -rf BRAND.lua')
-download('https://raw.githubusercontent.com/Cadilaac/BRAND/main/BRAND.lua','BRAND.lua')
+download('https://raw.githubusercontent.com/BBHXX/BRAND/master/BRAND.lua','BRAND.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⟐︙تم تحديث السورس * ',"md",true)  
 end
 if text == '『 تعطيل الاذاعه 』' or text == 'تعطيل الاذاعه' then
@@ -3068,7 +3068,7 @@ if text == 'رتبتي' then
 local ban = LuaTele.getUser(msg.sender.user_id)
 local news = ' '..msg.Name_Controller
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
-{{text =news,url = "https://t.me/Cadilaac"}, },}}
+{{text =news,url = "https://t.me/CXRCX"}, },}}
 return LuaTele.sendText(msg_chat_id,msg_id,'\n⟐︙رتبتك هي : '..msg.Name_Controller,"md", false, false, false, false, reply_markup)
 end
 if text == 'ايديي' then
@@ -4529,7 +4529,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url='https://t.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url='https://t.me/CXRCX'},
 },
 }
 }
@@ -6253,7 +6253,7 @@ local TestText = "  ❲ Owner Groups ❳\n— — — — — — — — —\n 
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -6701,7 +6701,7 @@ local Text ='*⟐︙تم اختيار ريمكس لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6713,7 +6713,7 @@ local Text ='*⟐︙تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6725,7 +6725,7 @@ local Text ='*⟐︙تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6747,7 +6747,7 @@ local Text ='*⟐︙تم اختيار صور*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -9784,7 +9784,7 @@ local TestText = "  ❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳\n— — — — — 
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9797,7 +9797,7 @@ keyboardd.inline_keyboard = {
 {text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/M_R_R"}
 },
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"},
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9819,7 +9819,7 @@ local TestText = "  ❲ Developers Bot ❳\n— — — — — — — — —\
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳', url = "https://t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9904,7 +9904,7 @@ local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&photo="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-video = "https://t.me/jskskdkkdld/6"
+video = "https://t.me/PPPUUUP/218"
 local T =[[
 Welcome to Source : [BRAND TEAM.](https://t.me/CXRCX)
 ]]

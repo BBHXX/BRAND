@@ -2595,53 +2595,6 @@ end
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⟐︙تم استرجاع ردود المجموعات* ',"md",true)  
 end
 end
-if data.message.content.luatele == "messageChatJoinByLink" and Redis:get(TheBRAND..'BRAND:Status:joinet'..data.message.chat_id) == 'true' then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = ' انا لست بوت ', data = data.message.sender.user_id..'/UnKed'},
-},
-}
-} 
-LuaTele.setChatMemberStatus(data.message.chat_id,data.message.sender.user_id,'restricted',{1,0,0,0,0,0,0,0,0})
-return LuaTele.sendText(data.message.chat_id, data.message.id, 'عليك اختيار انا لست بوت لتخطي نضام التحقق', 'md',false, false, false, false, reply_markup)
-end
-
-File_Bot_Run(data.message,data.message)
-
-elseif data and data.luatele and data.luatele == "updateMessageEdited" then
--- data.chat_id -- data.message_id
-local Message_Edit = LuaTele.getMessage(data.chat_id, data.message_id)
-if Message_Edit.sender.user_id == BRAND then
-print('This is Edit for Bot')
-return false
-end
-File_Bot_Run(Message_Edit,Message_Edit)
-Redis:incr(TheBRAND..'BRAND:Num:Message:Edit'..data.chat_id..Message_Edit.sender.user_id)
-if Message_Edit.content.luatele == "messageContact" or Message_Edit.content.luatele == "messageVideoNote" or Message_Edit.content.luatele == "messageDocument" or Message_Edit.content.luatele == "messageAudio" or Message_Edit.content.luatele == "messageVideo" or Message_Edit.content.luatele == "messageVoiceNote" or Message_Edit.content.luatele == "messageAnimation" or Message_Edit.content.luatele == "messagePhoto" then
-if Redis:get(TheBRAND.."BRAND:Lock:edit"..data.chat_id) then
-LuaTele.deleteMessages(data.chat_id,{[1]= data.message_id})
-end
-end
-elseif data and data.luatele and data.luatele == "updateNewCallbackQuery" then
--- data.chat_id
--- data.payload.data
--- data.sender_user_id
-Text = LuaTele.base64_decode(data.payload.data)
-IdUser = data.sender_user_id
-ChatId = data.chat_id
-Msg_id = data.message_id
-
-if Text and Text:match('(%d+)/UnKed') then
-local UserId = Text:match('(%d+)/UnKed')
-if tonumber(UserId) ~= tonumber(IdUser) then
-return LuaTele.answerCallbackQuery(data.id, "خاب شو اكل خرا ", true)
-end
-LuaTele.setChatMemberStatus(ChatId,UserId,'restricted',{1,1,1,1,1,1,1,1})
-return LuaTele.editMessageText(ChatId,Msg_id,"• تم التحقق منك اجابتك صحيحه يمكنك الدردشه الان", 'md', false)
-end
-
 if text and text:match("^تعين عدد الاعضاء (%d+)$") then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⟐︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
@@ -8046,20 +7999,6 @@ end
 Redis:setex(TheBRAND.."Tshake:Welcome:Group" .. msg_chat_id .. "" .. msg.sender.user_id, 120, true)  
 return LuaTele.sendText(msg_chat_id,msg_id,"⟐︙ارسل لي الترحيب الان".."\n⟐︙تستطيع اضافة مايلي !\n⟐︙دالة عرض الاسم »{`name`}\n⟐︙دالة عرض المعرف »{`user`}\n⟐︙دالة عرض اسم المجموعه »{`NameCh`}","md",true)   
 end
-if text == 'تعطيل التحقق' then
-if not msg.Addictive then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n• الامر يخص : ( '..Controller_Num(7)..' ) ',"md",true)  
-end
-Redis:del(TheBRAND.."BRAND:Status:joinet"..msg_chat_id) 
-return LuaTele.sendText(msg_chat_id,msg_id,"• تم تعطيل التحقق ","md",true)
-end
-if text == 'تفعيل التحقق' then
-if not msg.Addictive then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n• الامر يخص : ( '..Controller_Num(7)..' ) ',"md",true)  
-end
-Redis:set(TheBRAND.."BRAND:Status:joinet"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"• تم تفعيل التحقق ","md",true)
-end
 if text == "الترحيب" then 
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⟐︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
@@ -10409,20 +10348,20 @@ end
 Redis:del(TheBRAND.."BRAND:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"⟐︙تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(TheBRAND.."BRAND:Name:Bot") or "كاديلاك") then
-local NamesBot = (Redis:get(TheBRAND.."BRAND:Name:Bot") or "كاديلاك")
+if text == (Redis:get(TheBRAND.."BRAND:Name:Bot") or "براند") then
+local NamesBot = (Redis:get(TheBRAND.."BRAND:Name:Bot") or "براند")
 local NameBots = {
 "ها "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات كاديلاك بعدين اجاوبك",
+"لتــلح دا احجي ويه بنات براند بعدين اجاوبك",
 "راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
 'يمعود والله نعسان'
 }
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheBRAND.."BRAND:Name:Bot") or "كاديلاك")
+local NamesBot = (Redis:get(TheBRAND.."BRAND:Name:Bot") or "براند")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -11364,7 +11303,7 @@ if text == '/start' then
 Redis:sadd(TheBRAND..'BRAND:Num:User:Pv',msg.sender.user_id)  
 if not msg.ControllerBot then
 if not Redis:get(TheBRAND.."BRAND:Start:Bot") then
-local CmdStart = '*\n⟐︙أهلآ بك في بوت '..(Redis:get(TheBRAND.."BRAND:Name:Bot") or "كاديلاك")..
+local CmdStart = '*\n⟐︙أهلآ بك في بوت '..(Redis:get(TheBRAND.."BRAND:Name:Bot") or "براند")..
 '\n⟐︙اختصاص البوت حماية المجموعات'..
 '\n⟐︙لتفعيل البوت عليك اتباع مايلي ...'..
 '\n⟐︙اضف البوت الى مجموعتك'..
@@ -12378,7 +12317,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎??𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '𝚑𝚎??𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘??𝚘𝚜'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {

@@ -5,10 +5,15 @@ BRAND source is being installed,
 Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
-If it is the first time to install the source, send the number » {1}
-or اذا كانت اول مره تنصيب السورس ارسل رقم » {1}
-If you have already installed the source, send the number » {2}
-or اذا سبق ونصبت السورس ارسل رقم » {2}
+       ____  ____      _    _   _ ____  
+| __ )|  _ \    / \  | \ | |  _ \ 
+|  _ \| |_) |  / _ \ |  \| | | | |
+| |_) |  _ <  / ___ \| |\  | |_| |
+|____/|_| \_\/_/   \_\_| \_|____/
+  
+> CH › @CXRCX
+تحميل المكاتب ارسل (1)  ⟐
+تنصيب سريع ارسل (2)  ⟐
 \033[0m'
 read Install
 case $Install in
@@ -48,7 +53,7 @@ unzip tdbot.zip
 sudo lua5.3 BRAND.lua
 ;;
 2)
-echo -e "\e[1m\e[32mThe bot is running now : جاري تشغيل البوت الان : \e[0m"
+echo -e "\e[1m\e[32mجاري التشغيل ⟐ \e[0m"
 sleep 2
 unzip tdbot.zip
 sudo lua5.3 BRAND.lua

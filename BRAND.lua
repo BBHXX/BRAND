@@ -2637,7 +2637,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'},
 },
 }
 }
@@ -2720,7 +2720,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'},
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'},
 },
 }
 }
@@ -5052,7 +5052,7 @@ if not msg.DevelopersQ then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ⟐︙ هاذا الامر يخص 『 '..Controller_Num(2)..' 』* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/Cadilaac'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ⟐︙ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
@@ -5093,7 +5093,7 @@ if not msg.DevelopersQ then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ⟐︙ هاذا الامر يخص 『 '..Controller_Num(2)..' 』* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/Cadilaac'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ⟐︙ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
@@ -5567,7 +5567,7 @@ if not msg.DevelopersQ then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ⟐︙ هاذا الامر يخص 『 '..Controller_Num(2)..' 』* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/Cadilaac'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ⟐︙ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
@@ -5605,7 +5605,7 @@ if not msg.DevelopersQ then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ⟐︙ هاذا الامر يخص 『 '..Controller_Num(2)..' 』* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/Cadilaac'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ⟐︙ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
@@ -6659,7 +6659,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6670,7 +6670,7 @@ Abs = math.random(2,140);
 local Text ='*⟐︙تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}},
+{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6680,7 +6680,7 @@ Abs = math.random(2,140);
 local Text ='*⟐︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}},
+{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6690,7 +6690,7 @@ Abs = math.random(2,140);
 local Text ='*⟐︙تم اختيار الميمز لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}},
+{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/remixsource/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6736,7 +6736,7 @@ Abs = math.random(2,140);
 local Text ='*⟐︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}},
+{{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/lDIDIl/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -8427,7 +8427,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -9890,7 +9890,7 @@ data = {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
 {
-{text = '˛ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND .', url = 't.me/Cadilaac'}, 
+{text = '˛ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND .', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -9947,7 +9947,7 @@ data = {
 {text = 'اوامر القفل الفتح', data = msg.sender.user_id..'/NoNextSeting'}, {text = '  اوامر التعطيل التفعيل  ', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -9975,7 +9975,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -9995,7 +9995,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10015,7 +10015,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10035,7 +10035,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10055,7 +10055,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10069,7 +10069,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10083,7 +10083,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10098,7 +10098,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10113,7 +10113,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10128,7 +10128,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10143,7 +10143,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10158,7 +10158,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10173,7 +10173,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10188,7 +10188,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10202,7 +10202,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10217,7 +10217,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10232,7 +10232,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10247,7 +10247,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10262,7 +10262,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10278,7 +10278,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10292,7 +10292,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10307,7 +10307,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/Cadilaac'}, 
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 BRAND', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11314,7 +11314,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '⟐ السورس .', url = 't.me/Cadilaac'},{text = '⟐ لتنصيب بوت .', url = 't.me/M_R_R'}, 
+{text = '⟐ السورس .', url = 't.me/CXRCX'},{text = '⟐ لتنصيب بوت .', url = 't.me/M_R_R'}, 
 },
 {
 {text = '⟐ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11327,7 +11327,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '⟐ السورس .', url = 't.me/Cadilaac'},{text = '⟐ لتنصيب بوت .', url = 't.me/M_R_R'}, 
+{text = '⟐ السورس .', url = 't.me/CXRCX'},{text = '⟐ لتنصيب بوت .', url = 't.me/M_R_R'}, 
 },
 {
 {text = '⟐ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -12168,7 +12168,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/Cadilaac"}
+{text = '❲ 𝖲𝗈𝗎𝗋𝖼𝖾 BRAND ❳',url="t.me/CXRCX"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12446,7 +12446,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12504,7 +12504,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12563,7 +12563,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12617,7 +12617,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12657,7 +12657,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12712,7 +12712,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12755,7 +12755,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/Cadilaac'}, 
+{text = '- قناة السورس', url = 't.me/CXRCX'}, 
 },
 }
 }

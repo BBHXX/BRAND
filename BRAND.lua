@@ -1204,12 +1204,12 @@ local TextBot = '*• انا بوت اسمي '..N..'\n• وظيفتي حماي�
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {{{text = '• غادر •', data = msg.sender.user_id..'/leftgroup@'..msg_chat_id},{text = '• تفعيل •', data = msg.sender.user_id..'/addAdmins@'..msg_chat_id},},
-{{text = '• سورس براند •', url = 't.me/AKJA0'}, },}}
+{{text = '• سورس براند •', url = 't.me/CXRCX'}, },}}
 --]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• غادر •', callback_data=msg.sender.user_id..'/leftgroup@'..msg_chat_id},{text = '• تفعيل •', callback_data = msg.sender.user_id..'/onlinebott'..msg_chat_id},},
-{{text = '• سورس براند •', url = 't.me/AKJA0'},}}
+{{text = '• سورس براند •', url = 't.me/CXRCX'},}}
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg.chat_id.."&reply_to_message_id="..rep.."&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&caption="..URL.escape(TextBot).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 --return LuaTele.sendPhoto(msg.chat_id, 0, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, TextBot, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
@@ -2784,7 +2784,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*-  هاذا الامر يخص  '..Controller_Num(1)..'* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n-  عليك الاشتراك في قناة البوت لاستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(BRAND.."List:Rd:Sudo")
@@ -9456,7 +9456,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-  {text = 'قناه السورس', url = 't.me/AKJA0'}, 
+  {text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -10765,7 +10765,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*-  هاذا الامر يخص  '..Controller_Num(1)..'* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/CXRCX'}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n-  عليك الاشتراك في قناة البوت لاستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(BRAND.."List:Rd:Sudo")
@@ -11113,7 +11113,7 @@ end
 if text == 'ترجمه' or text == 'ترجمة' or text == 'ترجم' or text == 'translat' then 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text = 'الي العربية', data = msg.sender.user_id..'toar'},{text = 'الي الانجليزية', data = msg.sender.user_id..'toen'}},
-{{text = ' قناة السورس', url = "https://t.me/AKJA0"}},}}
+{{text = ' قناة السورس', url = "https://t.me/CXRCX"}},}}
 return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار نوع الترجمه
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
@@ -11126,7 +11126,7 @@ local Name = '*- 𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘛𝘰 𝘚𝘰𝘶𝘳𝘤𝘦 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝐃𝐞𝐯: 𝐒𝐨𝐮𝐫𝐜𝐞', url = "https://t.me/YYCCCC"},{text = '𝐂𝐡: 𝐒𝐨𝐮𝐫𝐜𝐞', url = "https://t.me/AKJA0"},
+{text = '𝐃𝐞𝐯: 𝐒𝐨𝐮𝐫𝐜𝐞', url = "https://t.me/YYCCCC"},{text = '𝐂𝐡: 𝐒𝐨𝐮𝐫𝐜𝐞', url = "https://t.me/CXRCX"},
 },
 {
 {text = '𝐄𝐱𝐩 𝐒𝐨𝐮𝐫𝐜𝐞', url = "http://t.me/cxrcx"}
@@ -11162,7 +11162,7 @@ data = {
 {text = 'الفتح والقفل', data = msg.sender.user_id..'/NoNextSeting'}, {text = 'التعطيل والتفعيل', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11193,7 +11193,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11214,7 +11214,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11235,7 +11235,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11256,7 +11256,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11277,7 +11277,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11298,7 +11298,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -11319,7 +11319,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = 'قناه السورس', url = 't.me/AKJA0'}, 
+{text = 'قناه السورس', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -12802,7 +12802,7 @@ title = 'اضغط هنا لمعرفه كيفيه ارسال الهمسه',
 input_message_content = input_message_content,
 reply_markup = {
 inline_keyboard ={
-{{text ="• BRAND Source", url= "https://t.me/AKJA0"}},
+{{text ="• BRAND Source", url= "https://t.me/CXRCX"}},
 }
 },
 },
@@ -13307,7 +13307,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس براند', url = 't.me/AKJA0'}, 
+{text = 'سورس براند', url = 't.me/CXRCX'}, 
 },
 }
 }
@@ -13322,7 +13322,7 @@ end
 if Text and Text:match('(%d+)/mp4(.*)') then
 local UserId = {Text:match('(%d+)/mp4(.*)')}
 if tonumber(IdUser) == tonumber(UserId[1]) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'سورس براند', url = 't.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'سورس براند', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*-  ارسل اسم الفيديو من فضلك
 -  Send Video Name Please*]]
 Redis:set(BRAND.."youtube"..IdUser..ChatId,'mp4')
@@ -13495,7 +13495,7 @@ if tonumber(IdUser) == tonumber(UserId[1]) then
 if StatusSilent(ChatId,UserId[2]) then
 return LuaTele.answerCallbackQuery(data.id, "\n•عذرآ لا تستطيع استخدام الامر على ( "..Controller(ChatId,UserId[2]).." } ", true)
 end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/CXRCX'}, },}}
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'restricted',{1,0,0,0,0,0,0,0,0})
 return LuaTele.editMessageText(ChatId,Msg_id,"• تم تنفيذ عقوبة التقييد علي العضو", 'md', true, false, reply_markup)
 end
@@ -13506,7 +13506,7 @@ if tonumber(IdUser) == tonumber(UserId[1]) then
 if StatusSilent(ChatId,UserId[2]) then
 return LuaTele.answerCallbackQuery(data.id, "\n•عذرآ لا تستطيع استخدام الامر على ( "..Controller(ChatId,UserId[2]).." } ", true)
 end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/CXRCX'}, },}}
 if Redis:sismember(BRAND.."SilentGroup:Group"..ChatId,UserId[2]) then
 Redis:srem(BRAND.."SilentGroup:Group"..ChatId,UserId[2])
 else
@@ -13521,7 +13521,7 @@ if tonumber(IdUser) == tonumber(UserId[1]) then
 if StatusCanOrNotCan(ChatId,UserId[2]) then
 return LuaTele.answerCallbackQuery(data.id, "\n•عذرآ لا تستطيع استخدام الامر على ( "..Controller(ChatId,UserId[2]).." } ", true)
 end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/CXRCX'}, },}}
 if Redis:sismember(BRAND.."BanGroup:Group"..ChatId,UserId[2]) then
 Redis:srem(BRAND.."BanGroup:Group"..ChatId,UserId[2])
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'restricted',{1,1,1,1,1,1,1,1,1})
@@ -13535,7 +13535,7 @@ end
 if Text and Text:match('(%d+)/cancelrdd') then
 local UserId = Text:match('(%d+)/cancelrdd')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناه السورس', url = 'https://t.me/CXRCX'}, },}}
 Redis:del(BRAND.."Set:array:Ssd"..IdUser..":"..ChatId)
 Redis:del(BRAND.."Set:array:rd"..IdUser..":"..ChatId)
 Redis:del(BRAND.."Set:array"..IdUser..":"..ChatId)
@@ -13631,13 +13631,13 @@ if Redis:get(BRAND..'Set:array'..IdUser..':'..ChatId) == 'true1' then
 Redis:del(BRAND..'Set:array'..IdUser..':'..ChatId)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'sᴏᴜʀᴄʀ BRAND',url='http://t.me/AKJA0'}},
+{{text = 'sᴏᴜʀᴄʀ BRAND',url='http://t.me/CXRCX'}},
 }
 local msg_idd = Msg_id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token..'/editMessageText?chat_id='..ChatId..'&text='..URL.escape("*-  تم حفظ الردود بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'sᴏᴜʀᴄʀ BRAND',url='http://t.me/AKJA0'}},}
+keyboard.inline_keyboard = {{{text = 'sᴏᴜʀᴄʀ BRAND',url='http://t.me/CXRCX'}},}
 return https.request("https://api.telegram.org/bot"..Token..'/editMessageText?chat_id='..ChatId..'&text='..URL.escape("*-  تم تنفيذ الامر سابقا*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end
@@ -13650,7 +13650,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, {text = '🄳', data = IdUser..'/help4'},},
 {{text = '🄴', data = IdUser..'/help5'}, {text = '🄵', data = IdUser..'/help7'},},
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  اوامر الحمايه اتبع مايلي ...
 •━─━─━─━─━─━─━─━•
@@ -13696,7 +13696,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, {text = '🄳', data = IdUser..'/help4'},},
 {{text = '🄴', data = IdUser..'/help5'}, {text = '🄵', data = IdUser..'/help7'},},
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'},},}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'},},}}
 local TextHelp = [[*
 -  اوامر ادمنية الجروب ...
 •━─━─━─━─━─━─━─━•
@@ -13739,7 +13739,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',data = {
 {{text = 'عوده', data = IdUser..'/chback'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'},},}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'},},}}
 local TextHelp = [[*
 -  تم تفعيل وضع الاشتراك الاجباري لكل الاعضاء
 *]]
@@ -13752,7 +13752,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',data = {
 {{text = 'عوده', data = IdUser..'/chback'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'},},}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'},},}}
 local TextHelp = [[*
 -  تم تفعيل وضع الاشتراك الاجباري علي اوامر البوت فقط مثل (الحظر/الكتم الخ..)
 *]]
@@ -13776,7 +13776,7 @@ type = 'inline',data = {
 {{text = '🄳', data = IdUser..'/help4'}, },
 {{text = '🄴', data = IdUser..'/help5'}, {text = '🄵', data = IdUser..'/help7'},},
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'},},}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'},},}}
 local TextHelp = [[*
 -  اوامر المدراء في الجروب
 •━─━─━─━─━─━─━─━•
@@ -13816,7 +13816,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, },
 {{text = '🄴', data = IdUser..'/help5'}, {text = '🄵', data = IdUser..'/help7'}, },
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  اوامر المنشئ الاساسي
 •━─━─━─━─━─━─━─━•
@@ -13843,7 +13843,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, {text = '🄳', data = IdUser..'/help4'}, },
 {{text = '🄵', data = IdUser..'/help7'}, },
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  اوامر المطور الاساسي
 •━─━─━─━─━─━─━─━•
@@ -13882,7 +13882,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, {text = '🄳', data = IdUser..'/help4'}, },
 {{text = '🄴', data = IdUser..'/help5'}, },
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  اوامر التسلية
 •━─━─━─━─━─━─━─━•
@@ -13927,7 +13927,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',data = {
 {{text = 'العاب السورس ™️', data = IdUser..'/normgm'}, {text = 'العاب متطورة 🎳', data = IdUser..'/degm'}, },
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },
 }}
 local TextHelp = [[*
 -  أهلا بك في قائمة العاب سورس براند اختر نوع الالعاب 
@@ -13947,7 +13947,7 @@ type = 'inline',data = {
 {{text = '- 2048', url = 'http://t.me/awesomebot?game=g2048'}, },
 {{text = '- كرة السلة ', url = 'http://t.me/gamee?game=BasketBoy'}, {text = '- القط المجنون', url = 'http://t.me/gamee?game=CrazyCat'}, },
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  مرحبا بك في الالعاب المتطورة الخاص بسورس براند
 -  اختر اللعبه ثم اختار المحادثة التي تريد اللعب بها
@@ -13960,7 +13960,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',data = {
 {{text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'}, },}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'}, },}}
 local TextHelp = [[*
 -  قائمه الالعاب البوت
 •━─━─━─━─━─━─━─━•
@@ -13994,7 +13994,7 @@ type = 'inline',data = {
 {{text = '🄲', data = IdUser..'/help3'}, {text = '🄳', data = IdUser..'/help4'}, },
 {{text = '🄴', data = IdUser..'/help5'}, {text = '🄵', data = IdUser..'/help7'}, },
 {{text = 'الالعاب', data = IdUser..'/help6'},},
-{{text = 'قناه السورس', url = 't.me/AKJA0'},},}}
+{{text = 'قناه السورس', url = 't.me/CXRCX'},},}}
 local TextHelp = [[*
 ⬇️╿ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs
 ▬▭▬▭▬▭▬▭▬▭▬
@@ -14011,7 +14011,7 @@ end
 elseif Text and Text:match('(%d+)toar') then
 local UserId = Text:match('(%d+)toar')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناة السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناة السورس', url = 'https://t.me/CXRCX'}, },}}
 local TextHelp = [[*• حسنا ارسل النص لترجمته الي العربيه*]]
 Redis:set(BRAND.."toar"..IdUser,"on")
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
@@ -14019,7 +14019,7 @@ end
 elseif Text and Text:match('(%d+)toen') then
 local UserId = Text:match('(%d+)toen')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناة السورس', url = 'https://t.me/AKJA0'}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'قناة السورس', url = 'https://t.me/CXRCX'}, },}}
 local TextHelp = [[*• حسنا ارسل النص لترجمته الي الانجليزيه*]]
 Redis:set(BRAND.."toen"..IdUser,"on")
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
@@ -14227,7 +14227,7 @@ keyboard.inline_keyboard = {
 {text = '• ترتيب الاوامر •', callback_data = IdUser..'/arrayCmd'..ChatId},
 },
 {
-{text = '• سورس براند •', url="t.me/AKJA0"},
+{text = '• سورس براند •', url="t.me/CXRCX"},
 },
 }
 local txxt = "-  تم تفعيل المجموعة و ترقيه {"..y.."} ادمنيه \n-  تم ترقية المالك"
@@ -14300,7 +14300,7 @@ local txxt = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• سورس براند •', url="t.me/AKJA0"},
+{text = '• سورس براند •', url="t.me/CXRCX"},
 },
 }
 local mm = Msg_id/2097152/0.5
